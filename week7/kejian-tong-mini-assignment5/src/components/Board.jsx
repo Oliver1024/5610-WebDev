@@ -1,6 +1,6 @@
-import React from "react"
-import { useSelector } from 'react-redux'
-import Square from "./Square"
+import React from "react";
+import { useSelector } from 'react-redux';
+import Square from "./Square";
 
 export default function Board() {
     const clickCount = useSelector((state) => state.clickCount)

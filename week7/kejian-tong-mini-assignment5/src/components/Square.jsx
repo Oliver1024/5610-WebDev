@@ -1,5 +1,5 @@
-import { useDispatch } from "react-redux"
-import React from "react"
+import { useDispatch } from "react-redux";
+import React from "react";
 
 export default function Square(props) {
     const symbol = props.symbol;
