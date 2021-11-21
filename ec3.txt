@@ -1,0 +1,7 @@
+website url: http://www.trabant.se/
+
+1: The color of the entire homepage body and header are not coordinated. The colors of the body and header parts should at least be coordinated.
+2. Contents such as pictures, white space and text are not well uniform in the whole page. Fonts and color modle should be consistent. Using Color Palettes is a better way to improve.
+3. Accessibility. Part of the link button cannot be accessed. Solve the problem that the link button cannot be accessed. Redesign and use Navigation Bar to make the content more accessible to users.
+4. Design dialog to yield closure and Offer informative feedback for users if then have trouble with access.
+
