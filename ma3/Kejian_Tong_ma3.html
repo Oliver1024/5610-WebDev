@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        .grid-container {
+            height: 100vh;
+            display: grid;
+            grid-template-areas:
+                "box-header box-header box-header"
+                "box-side-left box-center box-side-right"
+                "box-footer box-footer box-footer"
+            ;
+            grid-template-columns: 1fr 4fr 1fr;
+            grid-template-rows: 1fr 4fr 1fr;
+            grid-gap: 5px;
+        }
+
+        .box {
+            background-color: pink;
+        }
+
+        .box-header {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            grid-area: box-header;
+
+        }
+
+        .box-center {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            grid-area: box-center;
+
+        }
+
+        .box-hover {
+            height: 60px;
+            width: 60px;
+            background-color: aqua;
+            transition: 500ms ease-in-out
+        }
+
+        .box-hover:hover {
+            height: 120px;
+            width: 120px;
+            background-color: lightgreen;
+
+        }
+
+        .box-footer {
+            grid-area: box-footer;
+        }
+    </style>
+
+    <title>Kejian Tong CSS+</title>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="box box-center">
+            <div class="box-hover">
+            </div>
+        </div>
+        <div class="box box-header">
+            <h1>Kejian Tong's Website</h1>
+        </div>
+        <div class="box box-side-left">
+            <div class="ul-container">
+                <ul>
+                    <li><a href="#">Home Page</a></li>
+                    <li><a href="#">Photos</a></li>
+                    <li><a href="#">Secret Project</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="box box-side-right">
+        </div>
+        <div class="box box-footer">
+        </div>
+    </div>
+</body>
+
+</html>
