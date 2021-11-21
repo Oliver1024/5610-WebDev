@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+
+
+<body>
+  <div class="box-text ">
+    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum distinctio eum ex, repellat beatae in quasi
+      eligendi enim dolorem ipsam. Ab necessitatibus sunt commodi ad fugit soluta provident dolorem distinctio?</h2>
+  </div>
+  <div class="box-parent">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+
+  <style>
+    .box-parent {
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+
+    }
+
+    .box-text {
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      margin-top: 10vw;
+      width: 60%;
+      margin-left: 20vw;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+
+    .text {
+      text-align: center;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    .box {
+      background: red;
+      padding: 5px;
+      height: 20vw;
+      width: 20vw;
+      font-weight: bold;
+      text-align: center;
+      margin: 20px;
+      border: 0px;
+    }
+
+    @media(min-width: 600px) {
+      .box {
+        border: 5px solid purple;
+      }
+    }
+
+    .box-parent :hover {
+      transition: 60ms;
+      background-color: green;
+    }
+  </style>
+</body>
+
+</html>
