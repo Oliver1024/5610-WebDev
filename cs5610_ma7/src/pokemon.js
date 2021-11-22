@@ -81,8 +81,9 @@ router.put('/:pokemonId', function (req, res) {
             health: health !== undefined ? parseInt(req.body.health) : myPokemon[idx].health,
             level: level !== undefined ? parseInt(req.body.level) : myPokemon[idx].level
         }
-
-        return res.send(myPokemon + ' Update successfully');
+        JSON.stringify(myPokemon)
+        // return res.send(JSON.stringify(myPokemon) + ' Update successfully');
+        return res.send(myPokemon)
     }
     console.log(myPokemon)
     return res.status(404).send('no pokemon matches that' + pokemonQuery);
